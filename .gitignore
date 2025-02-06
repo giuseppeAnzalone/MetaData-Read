@@ -1,0 +1,64 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# MongoDB
+dump/
+data/
+*.lock
+*.bak
+
+# Build e cache
+dist/
+build/
+.cache/
+coverage/
+tmp/
+temp/
+
+# Configurazioni di ambiente
+.env
+.env.*
+.DS_Store
+
+# Configurazioni di editor/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+*.dockerignore
+*.tar
+.env.docker
+.docker/
+
+# Docker logs e file temporanei
+docker-logs/
+docker_tmp/
+
+# File per leggere metadati
+CA01CN01/
+
+# Ignora file specifici
+Dockerfile
+README.Docker.md
+compose.yaml
+package.json
