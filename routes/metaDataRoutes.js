@@ -1,7 +1,8 @@
 const express = require("express");
-const MetaData = require("../models/metaData");
-const processFolder = require("../services/processFolder");
 const path = require("path");
+
+const processFolder = require("../services/processFolder");
+const MetaData = require("../models/metaData");
 
 const routes = express();
 

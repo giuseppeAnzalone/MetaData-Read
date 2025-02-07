@@ -36,4 +36,4 @@ const scanDirectory = async (dirPath) => {
     }
 };
 
-module.exports = scanDirectory;
+module.exports = {scanDirectory};

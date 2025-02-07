@@ -1,5 +1,5 @@
-const scanDirectory = require("./fileScanner");
-const calcolaMetriche = require("./calcolaMetriche");
+const {scanDirectory} = require('./fileScanner')
+const {metricsCalculator} = require('./metricsCalculator')
 
 /**
  * Esegue la scansione e il calcolo delle metriche per una cartella.
@@ -12,7 +12,7 @@ const processFolder = async (dirPath) => {
         const fileList = await scanDirectory(dirPath);
 
         if (fileList.length > 0) {
-            await calcolaMetriche(dirPath, fileList);
+            await metricsCalculator(dirPath, fileList);
         } else {
             console.log(`🔄 Nessun file trovato in ${dirPath}, nessuna metrica da calcolare.`);
         }
