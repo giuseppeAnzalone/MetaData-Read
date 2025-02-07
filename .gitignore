@@ -57,6 +57,9 @@ docker_tmp/
 # File per leggere metadati
 CA01CN01/
 
+#Cartella
+Documentation/
+
 # Ignora file specifici
 Dockerfile
 README.Docker.md

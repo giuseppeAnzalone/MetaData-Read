@@ -9,8 +9,11 @@ const processFolder = async (dirPath) => {
     
     try {
         console.log(`📂 Elaborazione avviata per: ${dirPath}`);
+
+        // Chiama la funzione scanDirectory per ottenere un elenco di file presenti nella directory specificata, con i relativi metadati
         const fileList = await scanDirectory(dirPath);
 
+        // Se la lista di file (fileList) contiene almeno un elemento chiama metricsCalculator, che calcola e salva le metriche basate sui file trovati
         if (fileList.length > 0) {
             await metricsCalculator(dirPath, fileList);
         } else {
